@@ -1,10 +1,10 @@
 import express from 'express'
 import { resolve } from 'node:path'
-import { createAPIRouter } from '#server/api_router.js'
+import { createAPIRouter } from '#src/api-router.ts'
 
 const APP_PORT = 3000
 
-function main() {
+const main = (): void => {
   const app = express()
 
   app.use(createAPIRouter())
